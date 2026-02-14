@@ -8,37 +8,13 @@
     <title>LaserEye.ai | The Ultimate Vision & LiDAR Domain</title>
     <meta name="description" content="Premium Domain Asset LaserEye.ai for sale. The definitive brand for Computer Vision, Autonomous Lidar, AGI Perception, and the Web3 Laser Eyes movement.">
     <meta name="keywords" content="lasereye, laser eyes bitcoin, computer vision, lidar, autonomous driving, AGI, ASI, artificial superintelligence, domain for sale">
-    <meta name="author" content="LaserEye.ai">
     
     <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lasereye.ai/">
     <meta property="og:title" content="LaserEye.ai | AGI Vision & Web3 Identity">
     <meta property="og:description" content="Secure the ultimate brand for the future of Machine Sight.">
-    <meta property="og:image" content="https://ui-avatars.com/api/?name=Laser+Eye&background=000&color=ff003c&size=512"> 
-
-    <!-- JSON-LD Structured Data (Product) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "LaserEye.ai Domain Name",
-      "image": "",
-      "description": "Premium domain name 'LaserEye.ai' suitable for Computer Vision, LiDAR, and Crypto projects.",
-      "brand": {
-        "@type": "Brand",
-        "name": "LaserEye"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://lasereye.ai",
-        "priceCurrency": "USD",
-        "price": "12000",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-    </script>
-
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
     <!-- Icons -->
@@ -47,8 +23,7 @@
     <style>
         :root {
             --laser-red: #ff003c;
-            --laser-glow: rgba(255, 0, 60, 0.6);
-            --beam-core: #ffffff;
+            --laser-core: #fff0f5;
             --ai-blue: #00f3ff;
             --deep-space: #020205;
             --grid-color: rgba(0, 243, 255, 0.15);
@@ -57,10 +32,8 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Rajdhani', sans-serif; }
         body { background-color: var(--deep-space); color: #ffffff; overflow-x: hidden; line-height: 1.6; }
 
-        /* --- AGI BACKGROUND SYSTEM --- */
+        /* --- BACKGROUND --- */
         .scifi-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; background: radial-gradient(circle at center, #0b1021 0%, #000000 100%); }
-        
-        /* Moving 3D Grid Floor */
         .grid-floor {
             position: fixed; bottom: -50%; left: -50%; width: 200%; height: 100%;
             background-image: linear-gradient(var(--grid-color) 1px, transparent 1px), linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
@@ -69,10 +42,8 @@
             animation: moveGrid 5s linear infinite;
             z-index: -1;
             mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%);
-            -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%);
         }
         @keyframes moveGrid { 0% { transform: perspective(500px) rotateX(60deg) translateY(0); } 100% { transform: perspective(500px) rotateX(60deg) translateY(60px); } }
-
         #neural-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.5; }
 
         /* --- HEADER --- */
@@ -80,75 +51,124 @@
         .logo-container { font-family: 'Orbitron', sans-serif; font-size: 2rem; font-weight: 900; letter-spacing: 1px; cursor: pointer; text-transform: uppercase; }
         .text-laser { color: var(--laser-red); text-shadow: 0 0 15px var(--laser-red); animation: laserPulse 2s infinite alternate; }
         .text-ai { color: var(--ai-blue); display: inline-block; animation: aiGlitch 4s infinite; }
-        
         @keyframes laserPulse { from { text-shadow: 0 0 5px var(--laser-red); opacity: 0.9; } to { text-shadow: 0 0 25px var(--laser-red); opacity: 1; } }
-        @keyframes aiGlitch { 0%, 100% { transform: skew(0deg); opacity: 1; } 5% { transform: skew(-20deg); opacity: 0.8; } 10% { transform: skew(20deg); opacity: 1; } }
 
-        /* --- HERO & LASER BEAM --- */
-        .hero { min-height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; padding-top: 80px; overflow: hidden; }
-
-        /* --- NEW EYE CSS (Almond Shape) --- */
-        .eye-container {
+        /* --- HERO --- */
+        .hero { min-height: 95vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; padding-top: 80px; overflow: hidden; }
+        
+        /* --- MORPHING EYE SYSTEM --- */
+        .eye-wrapper {
             position: relative;
-            width: 160px;
-            height: 160px;
+            width: 200px;
+            height: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 2rem;
-            z-index: 10;
+            margin-bottom: 3rem;
+            z-index: 20;
         }
 
-        .cyber-eye-shape {
-            width: 100%;
-            height: 100%;
-            background: #000;
-            border: 3px solid var(--laser-red);
-            /* This creates the almond eye shape */
-            border-radius: 75% 15%; 
-            transform: rotate(-45deg);
+        /* The Morphing Shape (Human <-> Robot) */
+        .morph-eye {
             position: relative;
+            background: #000;
+            border: 4px solid var(--laser-red);
+            box-shadow: 0 0 50px var(--laser-red), inset 0 0 30px #000;
             overflow: hidden;
-            box-shadow: 0 0 40px var(--laser-red), inset 0 0 20px #000;
-            animation: eyeBreathing 4s ease-in-out infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            /* Animation Sequence */
+            animation: morphSequence 6s infinite ease-in-out;
         }
 
+        /* The Iris/Core */
         .iris {
             position: absolute;
-            top: 50%; left: 50%;
-            width: 60px; height: 60px;
-            background: radial-gradient(circle, #fff 0%, var(--laser-red) 40%, #000 70%);
+            background: radial-gradient(circle, var(--laser-core) 10%, var(--laser-red) 50%, #000 90%);
             border-radius: 50%;
-            /* Counter-rotate to keep pupil upright if needed, or just center it */
-            transform: translate(-50%, -50%); 
-            box-shadow: 0 0 20px var(--laser-red);
-            animation: pupilScan 0.2s infinite alternate; /* Rapid flickering */
+            box-shadow: 0 0 30px var(--laser-red);
+            animation: irisSequence 6s infinite ease-in-out;
         }
 
-        /* The Laser Beam Origin Point (Invisible, for canvas calculation) */
-        #beam-origin {
+        /* Mechanical Aperture Lines (Visible only in Robot Mode) */
+        .aperture-blades {
+            position: absolute;
+            width: 100%; height: 100%;
+            border: 2px dashed rgba(255, 0, 60, 0.5);
+            border-radius: 50%;
+            animation: spinAperture 10s linear infinite;
+            opacity: 0; /* Hidden by default */
+        }
+
+        /* Lens Flare / Anamorphic Streak (The "Meme" Effect) */
+        .lens-flare {
             position: absolute;
             top: 50%; left: 50%;
-            width: 1px; height: 1px;
+            transform: translate(-50%, -50%);
+            width: 800px; /* Wide streak */
+            height: 6px;
+            background: linear-gradient(90deg, transparent 0%, rgba(255,0,60,0.1) 20%, var(--laser-core) 50%, rgba(255,0,60,0.1) 80%, transparent 100%);
+            z-index: 25;
+            mix-blend-mode: screen;
+            pointer-events: none;
+            box-shadow: 0 0 20px var(--laser-red);
+            animation: flarePulse 0.1s infinite alternate;
         }
 
-        @keyframes eyeBreathing {
-            0%, 100% { box-shadow: 0 0 40px var(--laser-red); border-color: var(--laser-red); }
-            50% { box-shadow: 0 0 80px var(--laser-red); border-color: #ff5577; }
+        /* --- ANIMATIONS --- */
+        /* 0-45%: Human Eye | 50-95%: Robot Eye */
+        @keyframes morphSequence {
+            0%, 40% { /* Human State */
+                width: 160px; height: 90px;
+                border-radius: 75% 15%; /* Almond shape */
+                transform: rotate(-10deg);
+                border-color: var(--laser-red);
+            }
+            45%, 50% { /* Transition Flash */
+                width: 140px; height: 140px;
+                border-radius: 50%;
+                transform: rotate(0deg) scale(1.1);
+                background: var(--laser-red); /* Flash red */
+            }
+            55%, 95% { /* Robot State */
+                width: 140px; height: 140px;
+                border-radius: 50%; /* Perfect Circle */
+                transform: rotate(0deg);
+                border-color: var(--ai-blue); /* Robot turns slightly blueish/tech red */
+                box-shadow: 0 0 80px var(--laser-red);
+            }
+            100% { /* Back to Human */
+                width: 160px; height: 90px;
+                border-radius: 75% 15%;
+                transform: rotate(-10deg);
+            }
         }
 
-        @keyframes pupilScan {
-            0% { width: 60px; height: 60px; opacity: 1; }
-            100% { width: 55px; height: 55px; opacity: 0.8; }
+        @keyframes irisSequence {
+            0%, 40% { /* Human Iris */
+                width: 60px; height: 60px;
+                background: radial-gradient(circle, #fff, var(--laser-red), #000);
+            }
+            55%, 95% { /* Robot Core */
+                width: 40px; height: 40px;
+                background: #fff; /* Bright core point */
+                box-shadow: 0 0 20px #fff, 0 0 40px var(--laser-red);
+            }
         }
 
-        /* 180 DEGREE BEAM CANVAS */
+        @keyframes flarePulse {
+            0% { opacity: 0.8; height: 4px; }
+            100% { opacity: 1; height: 8px; }
+        }
+
+        /* 360 BEAM CANVAS */
         #beam-canvas {
             position: absolute;
             top: 0; left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 5;
+            width: 100%; height: 100%;
+            z-index: 15; /* Behind eye but in front of BG */
             pointer-events: none;
         }
 
@@ -158,48 +178,35 @@
         /* --- 12 AREAS GRID --- */
         .grid-section { padding: 5rem 10%; position: relative; z-index: 10; }
         .section-title { text-align: center; font-family: 'Orbitron', sans-serif; font-size: 2rem; margin-bottom: 4rem; color: #fff; text-transform: uppercase; letter-spacing: 2px; }
-        .section-title span { color: var(--laser-red); }
-        
         .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; }
-        
         .card { background: rgba(13, 16, 26, 0.7); border: 1px solid rgba(0, 243, 255, 0.1); padding: 2rem; backdrop-filter: blur(10px); transition: 0.3s; position: relative; overflow: hidden; }
         .card:hover { border-color: var(--laser-red); box-shadow: 0 0 30px rgba(255, 0, 60, 0.2); transform: translateY(-10px); }
         .card h3 { color: #fff; margin-bottom: 0.8rem; font-family: 'Orbitron', sans-serif; font-size: 1.1rem; }
         .card p { color: #999; font-size: 0.95rem; }
         .card.meme-card { border: 1px solid var(--laser-red); background: linear-gradient(135deg, rgba(255,0,60,0.1), rgba(0,0,0,0)); }
 
-        /* --- PRICING & OFFER --- */
+        /* --- PRICING --- */
         .pricing-section { padding: 5rem 5%; text-align: center; position: relative; z-index: 10; background: linear-gradient(0deg, #000, transparent); }
-        .price-card { max-width: 500px; margin: 0 auto; background: rgba(10,10,10,0.8); border: 1px solid var(--laser-red); padding: 40px; border-radius: 10px; box-shadow: 0 0 50px rgba(255, 0, 60, 0.15); }
-        
+        .price-card { max-width: 500px; margin: 0 auto; background: rgba(10,10,10,0.9); border: 1px solid var(--laser-red); padding: 40px; border-radius: 10px; box-shadow: 0 0 50px rgba(255, 0, 60, 0.15); }
         .price-tag { font-family: 'Orbitron', sans-serif; font-size: 3.5rem; font-weight: 700; color: #fff; text-shadow: 0 0 20px rgba(255, 0, 60, 0.5); }
-        .installments { display: inline-block; margin: 10px 0 30px 0; padding: 5px 20px; background: rgba(255, 0, 60, 0.1); border: 1px solid var(--laser-red); color: #fff; border-radius: 50px; font-family: 'Orbitron', sans-serif; font-size: 0.8rem; text-transform: uppercase; }
-
         .cta-btn { background: var(--laser-red); color: #fff; padding: 1.2rem 0; width: 100%; font-size: 1.2rem; font-family: 'Orbitron', sans-serif; font-weight: bold; text-transform: uppercase; border: none; cursor: pointer; margin-bottom: 20px; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); transition: all 0.3s; box-shadow: 0 0 20px rgba(255, 0, 60, 0.4); }
         .cta-btn:hover { transform: scale(1.02); box-shadow: 0 0 40px rgba(255, 0, 60, 0.8); background: #ff2255; }
-
-        /* --- OFFER FORM --- */
+        
+        /* Offer Input */
         .offer-divider { border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0; position: relative; }
         .offer-divider span { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #000; padding: 0 10px; color: #666; font-size: 0.8rem; font-family: 'Orbitron'; }
-        
         .offer-input { width: 100%; background: rgba(255,255,255,0.05); border: 1px solid #333; color: #fff; padding: 12px 15px; margin-bottom: 10px; font-family: 'Rajdhani'; font-size: 1rem; border-radius: 4px; transition: 0.3s; }
         .offer-input:focus { outline: none; border-color: var(--laser-red); box-shadow: 0 0 10px rgba(255, 0, 60, 0.2); }
-        
         .submit-offer-btn { background: transparent; border: 1px solid #666; color: #ccc; width: 100%; padding: 10px; font-family: 'Orbitron'; cursor: pointer; transition: 0.3s; text-transform: uppercase; }
         .submit-offer-btn:hover { border-color: var(--laser-red); color: var(--laser-red); box-shadow: 0 0 15px rgba(255, 0, 60, 0.2); }
-        
-        .form-message { margin-top: 10px; font-size: 0.9rem; min-height: 20px; }
-        .msg-success { color: var(--ai-blue); }
+        .form-message { margin-top: 10px; font-size: 0.9rem; min-height: 20px; color: var(--ai-blue); }
 
         /* --- FOOTER --- */
         footer { padding: 3rem 10%; background: #000; border-top: 1px solid #222; color: #555; font-size: 0.8rem; text-align: center; position: relative; z-index: 10; }
-        .disclaimer { margin-top: 2rem; padding-top: 1rem; border-top: 1px dashed #333; max-width: 800px; margin-left: auto; margin-right: auto; }
-
     </style>
 </head>
 <body>
 
-    <!-- AGI Environment -->
     <div class="scifi-bg"></div>
     <div class="grid-floor"></div>
     <canvas id="neural-canvas"></canvas>
@@ -212,16 +219,19 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
             
-            <!-- 180 DEGREE BEAM CANVAS (Behind the eye) -->
+            <!-- 360 DEGREE LASER CANVAS -->
             <canvas id="beam-canvas"></canvas>
 
-            <!-- THE CYBER EYE SYSTEM -->
-            <div class="eye-container" id="eye-tracker">
-                <div class="cyber-eye-shape">
+            <div class="eye-wrapper" id="eye-anchor">
+                <!-- Anamorphic Lens Flare (The Line) -->
+                <div class="lens-flare"></div>
+                
+                <!-- The Eye (Morphing) -->
+                <div class="morph-eye">
                     <div class="iris"></div>
+                    <div class="aperture-blades"></div>
                 </div>
             </div>
 
@@ -234,25 +244,15 @@
 
         <!-- 12 Key Areas -->
         <section class="grid-section">
-            <h2 class="section-title">12 Vectors of <span>Sight</span></h2>
+            <h2 class="section-title">12 Vectors of <span style="color:var(--laser-red)">Sight</span></h2>
             <div class="grid-container">
                 <div class="card meme-card">
                     <h3>1. Web3 Laser Eyes</h3>
                     <p>The ultimate symbol of Bitcoin conviction and "Diamond Hands" culture ($100k+ target).</p>
                 </div>
-                <div class="card">
-                    <h3>2. Computer Vision</h3>
-                    <p>Machine learning models that process images with superhuman accuracy.</p>
-                </div>
-                <div class="card">
-                    <h3>3. LiDAR Systems</h3>
-                    <p>Laser Imaging, Detection, and Ranging for autonomous mapping.</p>
-                </div>
-                <div class="card">
-                    <h3>4. Autonomous Vehicles</h3>
-                    <p>The "eyes" of self-driving cars, detecting obstacles in real-time.</p>
-                </div>
-                <!-- More cards preserved from previous logic -->
+                <div class="card"><h3>2. Computer Vision</h3><p>Machine learning models that process images with superhuman accuracy.</p></div>
+                <div class="card"><h3>3. LiDAR Systems</h3><p>Laser Imaging, Detection, and Ranging for autonomous mapping.</p></div>
+                <div class="card"><h3>4. Autonomous Vehicles</h3><p>The "eyes" of self-driving cars, detecting obstacles in real-time.</p></div>
                 <div class="card"><h3>5. Retinal Security</h3><p>Next-generation biometric authentication via iris scanning.</p></div>
                 <div class="card"><h3>6. Medical Imaging AI</h3><p>Precision laser surgery robotics guided by artificial intelligence.</p></div>
                 <div class="card"><h3>7. Drone Surveillance</h3><p>High-altitude optical recognition for defense and logistics.</p></div>
@@ -264,53 +264,42 @@
             </div>
         </section>
 
-        <!-- Pricing Section with COUNTER OFFER -->
+        <!-- Pricing Section -->
         <section class="pricing-section" id="purchase">
             <div class="price-card">
                 <p style="color:var(--laser-red); font-family:'Orbitron',sans-serif; letter-spacing:2px; margin-bottom:1rem;">ASSET VALUATION</p>
                 <div class="price-tag">$12,000</div>
-                <div class="installments">or 12 x $1,000/mo</div>
+                <div style="color:#888; margin-bottom:20px;">or 12 x $1,000/mo</div>
                 
-                <!-- Buy Button -->
                 <button class="cta-btn" onclick="handleBuy()">
                     Initialize Purchase <i class="fa-solid fa-bolt" style="margin-left:8px;"></i>
                 </button>
 
-                <!-- Counter Offer Form -->
                 <div class="offer-divider"><span>OR MAKE AN OFFER</span></div>
                 
                 <form id="offerForm">
                     <input type="hidden" name="_subject" value="New Offer for LaserEye.ai">
                     <input type="hidden" name="_template" value="table">
-                    
                     <input type="number" name="offer_amount" placeholder="Enter Counter Offer ($)" class="offer-input" required min="500">
                     <input type="email" name="email" placeholder="Your Email Protocol" class="offer-input" required>
-                    
-                    <button type="submit" class="submit-offer-btn" id="submitBtn">
-                        Transmit Offer
-                    </button>
+                    <button type="submit" class="submit-offer-btn" id="submitBtn">Transmit Offer</button>
                     <div id="formMessage" class="form-message"></div>
                 </form>
             </div>
         </section>
-
     </main>
 
     <footer>
         <p>&copy; 2026 LaserEye.ai. All Rights Reserved.</p>
-        <div class="disclaimer">
-            <strong>Disclaimer:</strong> LaserEye.ai is a premium domain name offered for sale. The "Laser Eyes" meme reference is a cultural nod to the crypto community.
-        </div>
+        <div style="font-size:0.7rem; color:#444; margin-top:10px;">Disclaimer: This domain name is for sale.</div>
     </footer>
 
     <script>
-        // --- 180 DEGREE FAN BEAM ANIMATION ---
+        // --- 360 DEGREE LASER EXPLOSION ---
         const beamCanvas = document.getElementById('beam-canvas');
         const ctx = beamCanvas.getContext('2d');
-        const eyeElement = document.getElementById('eye-tracker');
+        const eyeWrapper = document.getElementById('eye-anchor');
 
-        let particles = [];
-        
         function resizeBeamCanvas() {
             beamCanvas.width = window.innerWidth;
             beamCanvas.height = window.innerHeight;
@@ -318,72 +307,65 @@
         window.addEventListener('resize', resizeBeamCanvas);
         resizeBeamCanvas();
 
+        let particles = [];
+
         class LaserParticle {
             constructor() {
                 this.reset();
             }
 
             reset() {
-                // Calculate Eye Center Position relative to viewport
-                const rect = eyeElement.getBoundingClientRect();
-                this.originX = rect.left + rect.width / 2;
-                this.originY = rect.top + rect.height / 2;
+                // Get Eye Position
+                const rect = eyeWrapper.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
 
-                // 180 Degree Fan Logic (Scanning from -90 to +90 degrees)
-                // We want beams to shoot RIGHT (-PI/2 to +PI/2)
-                // Random angle between -1.2 and +1.2 radians (slightly less than full 180 to keep it focused forward)
-                const angle = (Math.random() * 2.4) - 1.2; 
+                this.x = centerX;
+                this.y = centerY;
                 
-                this.x = this.originX;
-                this.y = this.originY;
+                // 360 Degree Emission: Random angle between 0 and 2*PI
+                const angle = Math.random() * Math.PI * 2;
                 
-                this.speed = Math.random() * 15 + 10; // Very fast
-                
-                // Velocity vectors based on angle
+                this.speed = Math.random() * 10 + 5; 
                 this.vx = Math.cos(angle) * this.speed;
                 this.vy = Math.sin(angle) * this.speed;
                 
-                this.size = Math.random() * 2 + 0.5;
-                this.color = `rgba(255, 0, ${Math.random() * 50 + 20}, ${Math.random() * 0.8})`; // Red with varying alpha
+                this.size = Math.random() * 3 + 1;
+                // Intense Red/White mix
+                this.color = `rgba(255, ${Math.random() * 50}, ${Math.random() * 50}, ${Math.random() * 0.5 + 0.5})`; 
                 this.life = 0;
-                this.maxLife = 100 + Math.random() * 50;
+                this.maxLife = 50 + Math.random() * 50;
             }
 
             update() {
                 this.x += this.vx;
                 this.y += this.vy;
                 this.life++;
-
-                // Reset if off screen or dead
-                if (this.x > window.innerWidth || this.y < 0 || this.y > window.innerHeight || this.life > this.maxLife) {
+                if (this.x > window.innerWidth || this.x < 0 || this.y < 0 || this.y > window.innerHeight || this.life > this.maxLife) {
                     this.reset();
                 }
             }
 
             draw() {
                 ctx.beginPath();
-                // Draw a trail
                 ctx.moveTo(this.x, this.y);
-                ctx.lineTo(this.x - (this.vx * 4), this.y - (this.vy * 4)); // Trail length based on velocity
+                // Long trail for laser effect
+                ctx.lineTo(this.x - (this.vx * 3), this.y - (this.vy * 3));
                 ctx.strokeStyle = this.color;
                 ctx.lineWidth = this.size;
                 ctx.stroke();
             }
         }
 
-        // Initialize particles
-        for (let i = 0; i < 150; i++) {
+        // Create heavy particle count for intensity
+        for (let i = 0; i < 200; i++) {
             particles.push(new LaserParticle());
         }
 
         function animateBeam() {
-            // Slight trails effect
-            ctx.fillStyle = 'rgba(2, 2, 5, 0.2)'; 
+            // Slight trail fade effect
+            ctx.fillStyle = 'rgba(2, 2, 5, 0.15)'; 
             ctx.fillRect(0, 0, beamCanvas.width, beamCanvas.height);
-
-            // Re-calculate origin on every frame in case user scrolls (though eye is fixed/sticky relative to flow, actually eye is in hero so it moves)
-            // Wait, Hero is relative. We need to update origin in the particle loop or just reset often.
-            // Simplified: Reset handles position.
             
             particles.forEach(p => {
                 p.update();
@@ -393,67 +375,48 @@
         }
         animateBeam();
 
-        // --- BACKGROUND NEURAL DUST ---
+        // --- BACKGROUND DUST ---
         const neuralCanvas = document.getElementById('neural-canvas');
         const nCtx = neuralCanvas.getContext('2d');
-        neuralCanvas.width = window.innerWidth;
-        neuralCanvas.height = window.innerHeight;
+        function resizeNeural() { neuralCanvas.width = window.innerWidth; neuralCanvas.height = window.innerHeight; }
+        window.addEventListener('resize', resizeNeural);
+        resizeNeural();
         
         const stars = [];
-        for(let i=0; i<80; i++) {
-            stars.push({
-                x: Math.random() * window.innerWidth,
-                y: Math.random() * window.innerHeight,
-                size: Math.random() * 1.5,
-                speed: Math.random() * 0.3
-            });
-        }
+        for(let i=0; i<80; i++) stars.push({x: Math.random()*window.innerWidth, y: Math.random()*window.innerHeight, size: Math.random()*1.5, speed: Math.random()*0.3});
+        
         function animateNeural() {
             nCtx.clearRect(0, 0, neuralCanvas.width, neuralCanvas.height);
             nCtx.fillStyle = "rgba(0, 243, 255, 0.3)";
             stars.forEach(star => {
                 star.y -= star.speed;
                 if(star.y < 0) star.y = window.innerHeight;
-                nCtx.beginPath();
-                nCtx.arc(star.x, star.y, star.size, 0, Math.PI*2);
-                nCtx.fill();
+                nCtx.beginPath(); nCtx.arc(star.x, star.y, star.size, 0, Math.PI*2); nCtx.fill();
             });
             requestAnimationFrame(animateNeural);
         }
         animateNeural();
 
-        // --- AJAX FORM LOGIC ---
+        // --- AJAX FORM ---
         const form = document.getElementById('offerForm');
-        const submitBtn = document.getElementById('submitBtn');
         const msgDiv = document.getElementById('formMessage');
+        const submitBtn = document.getElementById('submitBtn');
 
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            submitBtn.innerHTML = "TRANSMITTING...";
-            submitBtn.style.color = "var(--laser-red)";
-            
+            submitBtn.innerText = "TRANSMITTING...";
             const formData = new FormData(form);
-            fetch("https://formsubmit.co/ajax/joshua369x@gmail.com", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                msgDiv.innerHTML = "<i class='fa-solid fa-check'></i> OFFER RECEIVED. STANDBY.";
-                msgDiv.className = "form-message msg-success";
+            fetch("https://formsubmit.co/ajax/joshua369x@gmail.com", { method: "POST", body: formData })
+            .then(r => r.json())
+            .then(d => {
+                msgDiv.innerHTML = "OFFER RECEIVED. STANDBY.";
                 form.reset();
-                submitBtn.innerHTML = "TRANSMIT OFFER";
-                setTimeout(() => { msgDiv.innerHTML = ""; }, 5000);
-            })
-            .catch(error => {
-                msgDiv.innerHTML = "ERROR IN TRANSMISSION.";
-                submitBtn.innerHTML = "RETRY";
+                submitBtn.innerText = "TRANSMIT OFFER";
+                setTimeout(() => msgDiv.innerHTML = "", 5000);
             });
         });
 
-        function handleBuy() {
-            window.open("https://www.spaceship.com/s/buy/lasereye.ai/Soz1nmGFRLykPDrv", '_blank');
-        }
+        function handleBuy() { window.open("https://www.spaceship.com/s/buy/lasereye.ai/Soz1nmGFRLykPDrv", '_blank'); }
     </script>
 </body>
 </html>
