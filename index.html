@@ -3,54 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LaserEye.ai - The ultimate domain for Computer Vision, Lidar Technology, Autonomous Systems, and the Web3 Laser Eye movement.">
-    <meta name="keywords" content="lasereye, laser eyes bitcoin, computer vision, lidar, autonomous driving, AGI, ASI, artificial superintelligence">
-    <title>LaserEye.ai | AGI Vision & Web3 Identity</title>
     
+    <!-- SEO OPTIMIZATION -->
+    <title>LaserEye.ai | The Ultimate Vision & LiDAR Domain</title>
+    <meta name="description" content="Premium Domain Asset LaserEye.ai for sale. The definitive brand for Computer Vision, Autonomous Lidar, AGI Perception, and the Web3 Laser Eyes movement.">
+    <meta name="keywords" content="lasereye, laser eyes bitcoin, computer vision, lidar, autonomous driving, AGI, ASI, artificial superintelligence, domain for sale">
+    <meta name="author" content="LaserEye.ai">
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lasereye.ai/">
+    <meta property="og:title" content="LaserEye.ai | AGI Vision & Web3 Identity">
+    <meta property="og:description" content="Secure the ultimate brand for the future of Machine Sight.">
+    <meta property="og:image" content="https://ui-avatars.com/api/?name=Laser+Eye&background=000&color=ff003c&size=512"> 
+
+    <!-- JSON-LD Structured Data (Product) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "LaserEye.ai Domain Name",
+      "image": "",
+      "description": "Premium domain name 'LaserEye.ai' suitable for Computer Vision, LiDAR, and Crypto projects.",
+      "brand": {
+        "@type": "Brand",
+        "name": "LaserEye"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://lasereye.ai",
+        "priceCurrency": "USD",
+        "price": "12000",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
             --laser-red: #ff003c;
+            --laser-glow: rgba(255, 0, 60, 0.6);
             --beam-core: #ffffff;
             --ai-blue: #00f3ff;
             --deep-space: #020205;
             --grid-color: rgba(0, 243, 255, 0.15);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Rajdhani', sans-serif;
-        }
-
-        body {
-            background-color: var(--deep-space);
-            color: #ffffff;
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Rajdhani', sans-serif; }
+        body { background-color: var(--deep-space); color: #ffffff; overflow-x: hidden; line-height: 1.6; }
 
         /* --- AGI BACKGROUND SYSTEM --- */
-        .scifi-bg {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -2;
-            background: radial-gradient(circle at center, #0b1021 0%, #000000 100%);
-        }
-
+        .scifi-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; background: radial-gradient(circle at center, #0b1021 0%, #000000 100%); }
+        
         /* Moving 3D Grid Floor */
         .grid-floor {
-            position: fixed;
-            bottom: -50%;
-            left: -50%;
-            width: 200%;
-            height: 100%;
-            background-image: 
-                linear-gradient(var(--grid-color) 1px, transparent 1px),
-                linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+            position: fixed; bottom: -50%; left: -50%; width: 200%; height: 100%;
+            background-image: linear-gradient(var(--grid-color) 1px, transparent 1px), linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
             background-size: 60px 60px;
             transform: perspective(500px) rotateX(60deg);
             animation: moveGrid 5s linear infinite;
@@ -58,285 +71,130 @@
             mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%);
             -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%);
         }
+        @keyframes moveGrid { 0% { transform: perspective(500px) rotateX(60deg) translateY(0); } 100% { transform: perspective(500px) rotateX(60deg) translateY(60px); } }
 
-        @keyframes moveGrid {
-            0% { transform: perspective(500px) rotateX(60deg) translateY(0); }
-            100% { transform: perspective(500px) rotateX(60deg) translateY(60px); }
-        }
-
-        /* Floating Particles (Neural Dust) */
-        #neural-canvas {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -1;
-            opacity: 0.5;
-        }
+        #neural-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.5; }
 
         /* --- HEADER --- */
-        header {
-            padding: 1.5rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            z-index: 100;
-            background: rgba(2, 2, 5, 0.8);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 0, 60, 0.2);
-        }
-
-        .logo-container {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2rem;
-            font-weight: 900;
-            letter-spacing: 1px;
-            cursor: pointer;
-            text-transform: uppercase;
-        }
-
+        header { padding: 1.5rem 5%; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; z-index: 100; background: rgba(2, 2, 5, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 0, 60, 0.2); }
+        .logo-container { font-family: 'Orbitron', sans-serif; font-size: 2rem; font-weight: 900; letter-spacing: 1px; cursor: pointer; text-transform: uppercase; }
         .text-laser { color: var(--laser-red); text-shadow: 0 0 15px var(--laser-red); animation: laserPulse 2s infinite alternate; }
         .text-ai { color: var(--ai-blue); display: inline-block; animation: aiGlitch 4s infinite; }
-
+        
         @keyframes laserPulse { from { text-shadow: 0 0 5px var(--laser-red); opacity: 0.9; } to { text-shadow: 0 0 25px var(--laser-red); opacity: 1; } }
-        @keyframes aiGlitch { 
-            0%, 100% { transform: skew(0deg); opacity: 1; }
-            5% { transform: skew(-20deg); opacity: 0.8; }
-            10% { transform: skew(20deg); opacity: 1; }
-        }
+        @keyframes aiGlitch { 0%, 100% { transform: skew(0deg); opacity: 1; } 5% { transform: skew(-20deg); opacity: 0.8; } 10% { transform: skew(20deg); opacity: 1; } }
 
         /* --- HERO & LASER BEAM --- */
-        .hero {
-            min-height: 90vh;
+        .hero { min-height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; padding-top: 80px; overflow: hidden; }
+
+        /* --- NEW EYE CSS (Almond Shape) --- */
+        .eye-container {
+            position: relative;
+            width: 160px;
+            height: 160px;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            position: relative;
-            padding-top: 80px;
-            overflow: hidden; /* Contain the beam */
-        }
-
-        /* Cyborg Eye Container */
-        .eye-system {
-            position: relative;
-            width: 120px;
-            height: 120px;
             margin-bottom: 2rem;
-            display: flex;
-            align-items: center;
-            /* Important: Allow the beam to flow out to the right */
-        }
-
-        /* The Physical Eye */
-        .cyber-eye {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background: radial-gradient(circle at 30% 30%, #fff, var(--laser-red) 20%, #000 70%);
-            box-shadow: 0 0 60px var(--laser-red), inset 0 0 20px #000;
-            position: relative;
             z-index: 10;
-            border: 4px solid #111;
         }
 
-        /* Reticle Overlay */
-        .reticle {
+        .cyber-eye-shape {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            border: 3px solid var(--laser-red);
+            /* This creates the almond eye shape */
+            border-radius: 75% 15%; 
+            transform: rotate(-45deg);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 40px var(--laser-red), inset 0 0 20px #000;
+            animation: eyeBreathing 4s ease-in-out infinite;
+        }
+
+        .iris {
             position: absolute;
             top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            width: 180px; height: 180px;
-            border: 1px dashed var(--ai-blue);
+            width: 60px; height: 60px;
+            background: radial-gradient(circle, #fff 0%, var(--laser-red) 40%, #000 70%);
             border-radius: 50%;
-            animation: spinReticle 20s linear infinite;
-            pointer-events: none;
+            /* Counter-rotate to keep pupil upright if needed, or just center it */
+            transform: translate(-50%, -50%); 
+            box-shadow: 0 0 20px var(--laser-red);
+            animation: pupilScan 0.2s infinite alternate; /* Rapid flickering */
         }
 
-        @keyframes spinReticle { to { transform: translate(-50%, -50%) rotate(360deg); } }
+        /* The Laser Beam Origin Point (Invisible, for canvas calculation) */
+        #beam-origin {
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 1px; height: 1px;
+        }
 
-        /* The PARTICLE BEAM Canvas */
+        @keyframes eyeBreathing {
+            0%, 100% { box-shadow: 0 0 40px var(--laser-red); border-color: var(--laser-red); }
+            50% { box-shadow: 0 0 80px var(--laser-red); border-color: #ff5577; }
+        }
+
+        @keyframes pupilScan {
+            0% { width: 60px; height: 60px; opacity: 1; }
+            100% { width: 55px; height: 55px; opacity: 0.8; }
+        }
+
+        /* 180 DEGREE BEAM CANVAS */
         #beam-canvas {
             position: absolute;
-            left: 100px; /* Start inside the eye */
-            top: 50%;
-            transform: translateY(-50%);
-            width: 2000px; /* Long enough to go off screen */
-            height: 200px;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
             z-index: 5;
             pointer-events: none;
-            mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 100%);
-            -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 100%);
         }
 
-        .hero h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: clamp(2.5rem, 5vw, 5rem);
-            margin-bottom: 0.5rem;
-            z-index: 10;
-            text-transform: uppercase;
-            line-height: 1.1;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: #ccc;
-            max-width: 600px;
-            z-index: 10;
-            margin-bottom: 2rem;
-        }
+        .hero h1 { font-family: 'Orbitron', sans-serif; font-size: clamp(2.5rem, 5vw, 5rem); margin-bottom: 0.5rem; z-index: 10; text-transform: uppercase; line-height: 1.1; }
+        .hero p { font-size: 1.2rem; color: #ccc; max-width: 600px; z-index: 10; margin-bottom: 2rem; }
 
         /* --- 12 AREAS GRID --- */
         .grid-section { padding: 5rem 10%; position: relative; z-index: 10; }
-
-        .section-title {
-            text-align: center;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2rem;
-            margin-bottom: 4rem;
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        
+        .section-title { text-align: center; font-family: 'Orbitron', sans-serif; font-size: 2rem; margin-bottom: 4rem; color: #fff; text-transform: uppercase; letter-spacing: 2px; }
         .section-title span { color: var(--laser-red); }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: rgba(13, 16, 26, 0.7);
-            border: 1px solid rgba(0, 243, 255, 0.1);
-            padding: 2rem;
-            backdrop-filter: blur(10px);
-            transition: 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card:hover {
-            border-color: var(--laser-red);
-            box-shadow: 0 0 30px rgba(255, 0, 60, 0.2);
-            transform: translateY(-10px);
-        }
-
+        
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; }
+        
+        .card { background: rgba(13, 16, 26, 0.7); border: 1px solid rgba(0, 243, 255, 0.1); padding: 2rem; backdrop-filter: blur(10px); transition: 0.3s; position: relative; overflow: hidden; }
+        .card:hover { border-color: var(--laser-red); box-shadow: 0 0 30px rgba(255, 0, 60, 0.2); transform: translateY(-10px); }
         .card h3 { color: #fff; margin-bottom: 0.8rem; font-family: 'Orbitron', sans-serif; font-size: 1.1rem; }
         .card p { color: #999; font-size: 0.95rem; }
+        .card.meme-card { border: 1px solid var(--laser-red); background: linear-gradient(135deg, rgba(255,0,60,0.1), rgba(0,0,0,0)); }
 
-        /* Meme Card Highlight */
-        .card.meme-card {
-            border: 1px solid var(--laser-red);
-            background: linear-gradient(135deg, rgba(255,0,60,0.1), rgba(0,0,0,0));
-        }
+        /* --- PRICING & OFFER --- */
+        .pricing-section { padding: 5rem 5%; text-align: center; position: relative; z-index: 10; background: linear-gradient(0deg, #000, transparent); }
+        .price-card { max-width: 500px; margin: 0 auto; background: rgba(10,10,10,0.8); border: 1px solid var(--laser-red); padding: 40px; border-radius: 10px; box-shadow: 0 0 50px rgba(255, 0, 60, 0.15); }
+        
+        .price-tag { font-family: 'Orbitron', sans-serif; font-size: 3.5rem; font-weight: 700; color: #fff; text-shadow: 0 0 20px rgba(255, 0, 60, 0.5); }
+        .installments { display: inline-block; margin: 10px 0 30px 0; padding: 5px 20px; background: rgba(255, 0, 60, 0.1); border: 1px solid var(--laser-red); color: #fff; border-radius: 50px; font-family: 'Orbitron', sans-serif; font-size: 0.8rem; text-transform: uppercase; }
 
-        /* --- PRICING --- */
-        .pricing-section {
-            padding: 5rem 5%;
-            text-align: center;
-            position: relative;
-            z-index: 10;
-            background: linear-gradient(0deg, #000, transparent);
-        }
+        .cta-btn { background: var(--laser-red); color: #fff; padding: 1.2rem 0; width: 100%; font-size: 1.2rem; font-family: 'Orbitron', sans-serif; font-weight: bold; text-transform: uppercase; border: none; cursor: pointer; margin-bottom: 20px; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); transition: all 0.3s; box-shadow: 0 0 20px rgba(255, 0, 60, 0.4); }
+        .cta-btn:hover { transform: scale(1.02); box-shadow: 0 0 40px rgba(255, 0, 60, 0.8); background: #ff2255; }
 
-        .price-tag {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 4.5rem;
-            font-weight: 700;
-            color: #fff;
-            text-shadow: 0 0 30px rgba(0, 243, 255, 0.4);
-        }
-
-        .installments {
-            display: inline-block;
-            margin: 10px 0 40px 0;
-            padding: 8px 25px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--ai-blue);
-            border-radius: 50px;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.9rem;
-        }
-
-        /* --- BUTTONS --- */
-        .cta-btn {
-            background: var(--laser-red);
-            color: #fff;
-            padding: 1.2rem 4rem;
-            font-size: 1.2rem;
-            font-family: 'Orbitron', sans-serif;
-            font-weight: bold;
-            text-transform: uppercase;
-            border: none;
-            cursor: pointer;
-            margin: 10px;
-            clip-path: polygon(15% 0, 100% 0, 100% 70%, 85% 100%, 0 100%, 0 30%);
-            transition: all 0.3s;
-            box-shadow: 0 0 20px rgba(255, 0, 60, 0.4);
-        }
-
-        .cta-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 50px rgba(255, 0, 60, 0.8);
-            background: #ff2255;
-        }
-
-        .contact-btn {
-            background: transparent;
-            border: 1px solid var(--ai-blue);
-            color: var(--ai-blue);
-            box-shadow: none;
-        }
-        .contact-btn:hover {
-            background: var(--ai-blue);
-            color: #000;
-            box-shadow: 0 0 30px var(--ai-blue);
-        }
+        /* --- OFFER FORM --- */
+        .offer-divider { border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0; position: relative; }
+        .offer-divider span { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #000; padding: 0 10px; color: #666; font-size: 0.8rem; font-family: 'Orbitron'; }
+        
+        .offer-input { width: 100%; background: rgba(255,255,255,0.05); border: 1px solid #333; color: #fff; padding: 12px 15px; margin-bottom: 10px; font-family: 'Rajdhani'; font-size: 1rem; border-radius: 4px; transition: 0.3s; }
+        .offer-input:focus { outline: none; border-color: var(--laser-red); box-shadow: 0 0 10px rgba(255, 0, 60, 0.2); }
+        
+        .submit-offer-btn { background: transparent; border: 1px solid #666; color: #ccc; width: 100%; padding: 10px; font-family: 'Orbitron'; cursor: pointer; transition: 0.3s; text-transform: uppercase; }
+        .submit-offer-btn:hover { border-color: var(--laser-red); color: var(--laser-red); box-shadow: 0 0 15px rgba(255, 0, 60, 0.2); }
+        
+        .form-message { margin-top: 10px; font-size: 0.9rem; min-height: 20px; }
+        .msg-success { color: var(--ai-blue); }
 
         /* --- FOOTER --- */
-        footer {
-            padding: 3rem 10%;
-            background: #000;
-            border-top: 1px solid #222;
-            color: #555;
-            font-size: 0.8rem;
-            text-align: center;
-            position: relative;
-            z-index: 10;
-        }
-        
-        .disclaimer {
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 1px dashed #333;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+        footer { padding: 3rem 10%; background: #000; border-top: 1px solid #222; color: #555; font-size: 0.8rem; text-align: center; position: relative; z-index: 10; }
+        .disclaimer { margin-top: 2rem; padding-top: 1rem; border-top: 1px dashed #333; max-width: 800px; margin-left: auto; margin-right: auto; }
 
-        /* Toast */
-        #toast {
-            visibility: hidden;
-            min-width: 250px;
-            background-color: rgba(0,0,0,0.9);
-            color: var(--laser-red);
-            border: 1px solid var(--laser-red);
-            text-align: center;
-            padding: 16px;
-            position: fixed;
-            z-index: 1000;
-            left: 50%;
-            bottom: 30px;
-            transform: translateX(-50%);
-            font-family: 'Orbitron', sans-serif;
-            box-shadow: 0 0 30px rgba(255, 0, 60, 0.2);
-        }
-        #toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
-        @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
-        @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
     </style>
 </head>
 <body>
@@ -357,12 +215,14 @@
         <!-- Hero Section -->
         <section class="hero">
             
-            <!-- THE CYBER EYE & BEAM SYSTEM -->
-            <div class="eye-system">
-                <div class="reticle"></div>
-                <!-- The Particle Beam Canvas -->
-                <canvas id="beam-canvas"></canvas>
-                <div class="cyber-eye"></div>
+            <!-- 180 DEGREE BEAM CANVAS (Behind the eye) -->
+            <canvas id="beam-canvas"></canvas>
+
+            <!-- THE CYBER EYE SYSTEM -->
+            <div class="eye-container" id="eye-tracker">
+                <div class="cyber-eye-shape">
+                    <div class="iris"></div>
+                </div>
             </div>
 
             <h1>Vision Intelligence <br><span style="color:var(--ai-blue); font-size: 0.6em;">for the AGI Era</span></h1>
@@ -392,111 +252,119 @@
                     <h3>4. Autonomous Vehicles</h3>
                     <p>The "eyes" of self-driving cars, detecting obstacles in real-time.</p>
                 </div>
-                <div class="card">
-                    <h3>5. Retinal Security</h3>
-                    <p>Next-generation biometric authentication via iris scanning.</p>
-                </div>
-                <div class="card">
-                    <h3>6. Medical Imaging AI</h3>
-                    <p>Precision laser surgery robotics guided by artificial intelligence.</p>
-                </div>
-                <div class="card">
-                    <h3>7. Drone Surveillance</h3>
-                    <p>High-altitude optical recognition for defense and logistics.</p>
-                </div>
-                <div class="card">
-                    <h3>8. Industrial QC</h3>
-                    <p>Automated laser inspection for manufacturing defects.</p>
-                </div>
-                <div class="card">
-                    <h3>9. Augmented Reality</h3>
-                    <p>Smart glasses and HUDs projecting data directly into the user's vision.</p>
-                </div>
-                <div class="card">
-                    <h3>10. Facial Recognition</h3>
-                    <p>Identity verification systems for smart cities and airports.</p>
-                </div>
-                <div class="card">
-                    <h3>11. Missile Defense</h3>
-                    <p>Laser tracking systems for neutralizing airborne threats.</p>
-                </div>
-                <div class="card">
-                    <h3>12. Precision Agriculture</h3>
-                    <p>Laser-guided weed elimination and crop monitoring bots.</p>
-                </div>
+                <!-- More cards preserved from previous logic -->
+                <div class="card"><h3>5. Retinal Security</h3><p>Next-generation biometric authentication via iris scanning.</p></div>
+                <div class="card"><h3>6. Medical Imaging AI</h3><p>Precision laser surgery robotics guided by artificial intelligence.</p></div>
+                <div class="card"><h3>7. Drone Surveillance</h3><p>High-altitude optical recognition for defense and logistics.</p></div>
+                <div class="card"><h3>8. Industrial QC</h3><p>Automated laser inspection for manufacturing defects.</p></div>
+                <div class="card"><h3>9. Augmented Reality</h3><p>Smart glasses and HUDs projecting data directly into the user's vision.</p></div>
+                <div class="card"><h3>10. Facial Recognition</h3><p>Identity verification systems for smart cities and airports.</p></div>
+                <div class="card"><h3>11. Missile Defense</h3><p>Laser tracking systems for neutralizing airborne threats.</p></div>
+                <div class="card"><h3>12. Precision Agriculture</h3><p>Laser-guided weed elimination and crop monitoring bots.</p></div>
             </div>
         </section>
 
-        <!-- Pricing Section -->
+        <!-- Pricing Section with COUNTER OFFER -->
         <section class="pricing-section" id="purchase">
-            <p style="color:var(--laser-red); font-family:'Orbitron',sans-serif; letter-spacing:2px; margin-bottom:1rem;">PREMIUM ASSET VALUATION</p>
-            <div class="price-tag">$12,000 USD</div>
-            <div class="installments">12 Monthly Installments Available</div>
-            <br>
-            
-            <!-- Buy Button -->
-            <button class="cta-btn" onclick="handleBuy()">
-                Initialize Purchase
-            </button>
-            <br>
-            <!-- Contact Button -->
-            <button class="cta-btn contact-btn" onclick="copyEmail()">
-                Contact Agent
-            </button>
+            <div class="price-card">
+                <p style="color:var(--laser-red); font-family:'Orbitron',sans-serif; letter-spacing:2px; margin-bottom:1rem;">ASSET VALUATION</p>
+                <div class="price-tag">$12,000</div>
+                <div class="installments">or 12 x $1,000/mo</div>
+                
+                <!-- Buy Button -->
+                <button class="cta-btn" onclick="handleBuy()">
+                    Initialize Purchase <i class="fa-solid fa-bolt" style="margin-left:8px;"></i>
+                </button>
+
+                <!-- Counter Offer Form -->
+                <div class="offer-divider"><span>OR MAKE AN OFFER</span></div>
+                
+                <form id="offerForm">
+                    <input type="hidden" name="_subject" value="New Offer for LaserEye.ai">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <input type="number" name="offer_amount" placeholder="Enter Counter Offer ($)" class="offer-input" required min="500">
+                    <input type="email" name="email" placeholder="Your Email Protocol" class="offer-input" required>
+                    
+                    <button type="submit" class="submit-offer-btn" id="submitBtn">
+                        Transmit Offer
+                    </button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
         </section>
+
     </main>
 
     <footer>
         <p>&copy; 2026 LaserEye.ai. All Rights Reserved.</p>
-        
         <div class="disclaimer">
-            <strong>Disclaimer:</strong> LaserEye.ai is a premium domain name offered for sale. It is not affiliated with any specific cryptocurrency project, autonomous vehicle manufacturer, or security firm. The "Laser Eyes" meme reference is a cultural nod to the crypto community.
+            <strong>Disclaimer:</strong> LaserEye.ai is a premium domain name offered for sale. The "Laser Eyes" meme reference is a cultural nod to the crypto community.
         </div>
     </footer>
 
-    <!-- Toast Notification -->
-    <div id="toast">TARGET ACQUIRED: Email Copied.</div>
-
     <script>
-        // --- PARTICLE BEAM ANIMATION (Main Eye) ---
+        // --- 180 DEGREE FAN BEAM ANIMATION ---
         const beamCanvas = document.getElementById('beam-canvas');
         const ctx = beamCanvas.getContext('2d');
+        const eyeElement = document.getElementById('eye-tracker');
 
-        // Set dimensions (Large width for beam)
-        beamCanvas.width = 2000;
-        beamCanvas.height = 200;
+        let particles = [];
+        
+        function resizeBeamCanvas() {
+            beamCanvas.width = window.innerWidth;
+            beamCanvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeBeamCanvas);
+        resizeBeamCanvas();
 
-        const particles = [];
-        const particleCount = 200; // Density of the beam
-
-        class Particle {
+        class LaserParticle {
             constructor() {
                 this.reset();
             }
 
             reset() {
-                this.x = Math.random() * 50; // Start near the eye (left side)
-                // Concentrate particles in the center y-axis (beam core)
-                this.y = (beamCanvas.height / 2) + (Math.random() * 20 - 10); 
-                this.speed = Math.random() * 20 + 10; // Very fast
-                this.size = Math.random() * 3 + 1;
-                this.color = `rgba(255, ${Math.random() * 50}, ${Math.random() * 60 + 60}, ${Math.random()})`; // Red/Pink mix
-                this.length = Math.random() * 50 + 10; // Trail length
+                // Calculate Eye Center Position relative to viewport
+                const rect = eyeElement.getBoundingClientRect();
+                this.originX = rect.left + rect.width / 2;
+                this.originY = rect.top + rect.height / 2;
+
+                // 180 Degree Fan Logic (Scanning from -90 to +90 degrees)
+                // We want beams to shoot RIGHT (-PI/2 to +PI/2)
+                // Random angle between -1.2 and +1.2 radians (slightly less than full 180 to keep it focused forward)
+                const angle = (Math.random() * 2.4) - 1.2; 
+                
+                this.x = this.originX;
+                this.y = this.originY;
+                
+                this.speed = Math.random() * 15 + 10; // Very fast
+                
+                // Velocity vectors based on angle
+                this.vx = Math.cos(angle) * this.speed;
+                this.vy = Math.sin(angle) * this.speed;
+                
+                this.size = Math.random() * 2 + 0.5;
+                this.color = `rgba(255, 0, ${Math.random() * 50 + 20}, ${Math.random() * 0.8})`; // Red with varying alpha
+                this.life = 0;
+                this.maxLife = 100 + Math.random() * 50;
             }
 
             update() {
-                this.x += this.speed;
-                // If particle goes off screen, reset it to the eye
-                if (this.x > beamCanvas.width) {
+                this.x += this.vx;
+                this.y += this.vy;
+                this.life++;
+
+                // Reset if off screen or dead
+                if (this.x > window.innerWidth || this.y < 0 || this.y > window.innerHeight || this.life > this.maxLife) {
                     this.reset();
                 }
             }
 
             draw() {
                 ctx.beginPath();
-                // Draw a line to simulate speed trail
+                // Draw a trail
                 ctx.moveTo(this.x, this.y);
-                ctx.lineTo(this.x - this.length, this.y);
+                ctx.lineTo(this.x - (this.vx * 4), this.y - (this.vy * 4)); // Trail length based on velocity
                 ctx.strokeStyle = this.color;
                 ctx.lineWidth = this.size;
                 ctx.stroke();
@@ -504,56 +372,45 @@
         }
 
         // Initialize particles
-        for (let i = 0; i < particleCount; i++) {
-            particles.push(new Particle());
+        for (let i = 0; i < 150; i++) {
+            particles.push(new LaserParticle());
         }
 
-        // Animation Loop for Beam
         function animateBeam() {
-            ctx.clearRect(0, 0, beamCanvas.width, beamCanvas.height);
-            
-            // Add a glowing core line
-            ctx.shadowBlur = 20;
-            ctx.shadowColor = "#ff003c";
-            ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
-            ctx.fillRect(0, (beamCanvas.height/2)-2, beamCanvas.width, 4);
-            ctx.shadowBlur = 0; // Reset for particles
+            // Slight trails effect
+            ctx.fillStyle = 'rgba(2, 2, 5, 0.2)'; 
+            ctx.fillRect(0, 0, beamCanvas.width, beamCanvas.height);
 
+            // Re-calculate origin on every frame in case user scrolls (though eye is fixed/sticky relative to flow, actually eye is in hero so it moves)
+            // Wait, Hero is relative. We need to update origin in the particle loop or just reset often.
+            // Simplified: Reset handles position.
+            
             particles.forEach(p => {
                 p.update();
                 p.draw();
             });
-
             requestAnimationFrame(animateBeam);
         }
         animateBeam();
 
-
-        // --- BACKGROUND NEURAL DUST ANIMATION ---
+        // --- BACKGROUND NEURAL DUST ---
         const neuralCanvas = document.getElementById('neural-canvas');
         const nCtx = neuralCanvas.getContext('2d');
+        neuralCanvas.width = window.innerWidth;
+        neuralCanvas.height = window.innerHeight;
         
-        function resizeNeural() {
-            neuralCanvas.width = window.innerWidth;
-            neuralCanvas.height = window.innerHeight;
-        }
-        window.addEventListener('resize', resizeNeural);
-        resizeNeural();
-
         const stars = [];
-        for(let i=0; i<100; i++) {
+        for(let i=0; i<80; i++) {
             stars.push({
                 x: Math.random() * window.innerWidth,
                 y: Math.random() * window.innerHeight,
-                size: Math.random() * 2,
-                speed: Math.random() * 0.5
+                size: Math.random() * 1.5,
+                speed: Math.random() * 0.3
             });
         }
-
         function animateNeural() {
             nCtx.clearRect(0, 0, neuralCanvas.width, neuralCanvas.height);
             nCtx.fillStyle = "rgba(0, 243, 255, 0.3)";
-            
             stars.forEach(star => {
                 star.y -= star.speed;
                 if(star.y < 0) star.y = window.innerHeight;
@@ -565,23 +422,37 @@
         }
         animateNeural();
 
+        // --- AJAX FORM LOGIC ---
+        const form = document.getElementById('offerForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const msgDiv = document.getElementById('formMessage');
 
-        // --- INTERACTION LOGIC ---
-        function copyEmail() {
-            const email = "joshua369x@gmail.com";
-            navigator.clipboard.writeText(email).then(() => {
-                const toast = document.getElementById("toast");
-                toast.className = "show";
-                setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
-            }).catch(err => {
-                console.error('Failed to copy: ', err);
-                alert("Email copied: " + email);
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            submitBtn.innerHTML = "TRANSMITTING...";
+            submitBtn.style.color = "var(--laser-red)";
+            
+            const formData = new FormData(form);
+            fetch("https://formsubmit.co/ajax/joshua369x@gmail.com", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                msgDiv.innerHTML = "<i class='fa-solid fa-check'></i> OFFER RECEIVED. STANDBY.";
+                msgDiv.className = "form-message msg-success";
+                form.reset();
+                submitBtn.innerHTML = "TRANSMIT OFFER";
+                setTimeout(() => { msgDiv.innerHTML = ""; }, 5000);
+            })
+            .catch(error => {
+                msgDiv.innerHTML = "ERROR IN TRANSMISSION.";
+                submitBtn.innerHTML = "RETRY";
             });
-        }
+        });
 
         function handleBuy() {
-            const url = "https://www.spaceship.com/s/buy/lasereye.ai/Soz1nmGFRLykPDrv";
-            window.open(url, '_blank');
+            window.open("https://www.spaceship.com/s/buy/lasereye.ai/Soz1nmGFRLykPDrv", '_blank');
         }
     </script>
 </body>
